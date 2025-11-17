@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style>
     body {
-      background-color: #0a58ca;
-      color: #fff;
+      background-color: black;
+      color: white;
       font-family: 'Poppins', sans-serif;
     }
 
@@ -28,16 +28,16 @@
     /* Blog Cards */
     .blog-card {
       background-color: #111;
-      border: 1px solid #0a58ca;
+      border: 1px solid aqua;
       border-radius: 15px;
       overflow: hidden;
       transition: 0.4s ease;
-      box-shadow: 0 0 20px rgba(10, 88, 202, 0.2);
+      box-shadow: 0 0 10px aqua;
     }
 
     .blog-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 30px rgba(10, 88, 202, 0.4);
+      box-shadow: 0 0 20px aqua;
     }
 
     .blog-card img {
@@ -51,7 +51,7 @@
     }
 
     .blog-card .card-title {
-      color: #0a58ca;
+      color: aqua;
       font-weight: 600;
       margin-bottom: 10px;
     }
@@ -62,7 +62,7 @@
     }
 
     .read-more {
-      color: #0a58ca;
+      color: aqua;
       font-weight: 500;
       text-decoration: none;
       transition: 0.3s;
@@ -75,19 +75,20 @@
     /* Social Section */
     .social-section {
       background-color: #0a0a0a;
-      border-top: 2px solid #0a58ca;
+      border-top: 2px solid aqua;
+      border: 1px solid aqua;
       padding: 60px 0;
       text-align: center;
     }
 
     .social-section h3 {
-      color: #0a58ca;
+      color: white;
       font-weight: 700;
       margin-bottom: 20px;
     }
 
     .social-icons a {
-      color: #0a58ca;
+      color: aqua;
       margin: 0 15px;
       font-size: 2rem;
       transition: 0.3s;
@@ -116,7 +117,7 @@
         <!-- Blog Post 1 -->
         <div class="col-md-4">
           <div class="card blog-card">
-            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80" alt="Smartphone" />
+            <img src="/Images/Gadgets Store/Phones/iPhone 16.png" alt="Smartphone" />
             <div class="card-body">
               <h5 class="card-title">Top 5 Smartphones of 2025</h5>
               <p class="card-text">Explore the best phones redefining mobile innovation this year.</p>
@@ -158,12 +159,12 @@
     <div class="container">
       <h3>Follow Us on Social Media</h3>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
       </div>
-      <p class="text-muted mt-3">Stay connected for the latest gadget updates, reviews, and tech deals!</p>
+      <p class="text-light mt-3">Stay connected for the latest gadget updates, reviews, and tech deals!</p>
     </div>
   </section>
 </asp:Content>

@@ -11,7 +11,8 @@
   /* Carousel */
   .carousel-inner video,
   .carousel-inner img {
-    height: 700px;
+    height: 450px;
+    width: 2100px;
     object-fit: cover;
     border-radius: 10px;
   }

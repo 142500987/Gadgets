@@ -28,8 +28,7 @@
     }
 
     .navbar-brand img {
-      height: 50px;
-      filter: drop-shadow(0 0 6px #0a58ca);
+      height: 60px;
       transition: transform 0.3s ease;
     }
 
@@ -210,6 +209,7 @@
 
             <li class="nav-item"><a class="nav-link" href="Blog.aspx">Blog</a></li>
             <li class="nav-item"><a class="nav-link" href="Contact Us.aspx">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="AddCart.aspx">Cart 🛒</a></li>
           </ul>
 
             <ul class="navbar-nav ms-3">

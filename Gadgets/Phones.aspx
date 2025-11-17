@@ -104,7 +104,7 @@
 
                 <div class="info-row">
                     <span class="label-title">Price: </span>
-                    <span class="value">$<%# Eval("Price") %></span></div>
+                    <span class="value"><%# Eval("Price") %></span></div>
 
                 <div class="info-row">
                     <span class="label-title">Used Before: </span>
@@ -120,6 +120,14 @@
                     <span class="label-title">Age: </span>
                     <span class="value"><%# Eval("DeviceAge") %> yrs</span>
                 </div>
+
+                <button type="button"
+                        class="btn btn-primary"
+                        onclick="addToCart('<%# Eval("DeviceName") %>', '<%# Eval("Price") %>')">
+                    Add to Cart
+                </button>
+
+                <br /><br />
 
             </div>
 
@@ -141,5 +149,28 @@
             <asp:ControlParameter ControlID="Label1" Name="DeviceType" PropertyName="Text" />
         </SelectParameters>
     </asp:SqlDataSource>
+
+<script>
+    function addToCart(name, price) {
+        price = parseFloat(price);
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let item = cart.find(p => p.name === name);
+
+        if (item) {
+            item.qty++;
+        } else {
+            cart.push({
+                name: name,
+                price: price,
+                qty: 1
+            });
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(name + " added to cart!");
+    }
+</script>
 
 </asp:Content>

@@ -12,8 +12,9 @@
 
     /* ====== Contact Section ====== */
     .contact-section {
-      padding: 80px 0;
-      background: linear-gradient(135deg, #0d0d0d 60%, #0a58ca 100%);
+      padding: 100px 0;
+      background: linear-gradient(130deg, #0d0d0d 40%, aqua 120%);
+      background-size: cover;
       border-top: 3px solid #0a58ca;
     }
 
@@ -22,17 +23,17 @@
       border: none;
       border-radius: 15px;
       padding: 40px;
-      box-shadow: 0 0 20px rgba(10, 88, 202, 0.3);
+      box-shadow: 0 0 20px aqua;
       animation: fadeUp 1s ease-in-out;
     }
 
     .contact-card:hover {
-      box-shadow: 0 0 30px rgba(10, 88, 202, 0.6);
+      box-shadow: 0 0 30px aqua;
       transition: box-shadow 0.3s ease-in-out;
     }
 
     .contact-card h2 {
-      color: #0a58ca;
+      color: aqua;
       font-weight: 700;
       margin-bottom: 25px;
       text-transform: uppercase;
@@ -40,20 +41,20 @@
 
     .form-control {
       background-color: #1a1a1a;
-      border: 1px solid #0a58ca;
+      border: 1px solid aqua;
       color: #fff;
       border-radius: 10px;
     }
 
     .form-control:focus {
       background-color: #1a1a1a;
-      border-color: #3b82f6;
+      border-color: aqua;
       box-shadow: 0 0 10px #0a58ca;
       color: #fff;
     }
 
     .btn-primary {
-      background-color: #0a58ca;
+      background-color: #16bbbb;
       border: none;
       border-radius: 30px;
       padding: 10px 30px;
@@ -63,7 +64,7 @@
 
     .btn-primary:hover {
       background-color: #0a58ca;
-      box-shadow: 0 0 15px #0a58ca;
+      box-shadow: 0 0 15px aqua;
       transform: translateY(-3px);
     }
 
@@ -72,7 +73,7 @@
     }
 
     .contact-info h5 {
-      color: #3b82f6;
+      color: aqua;
       margin-bottom: 10px;
     }
 
@@ -158,13 +159,13 @@
 
             <!-- Contact Info -->
             <div class="contact-info text-start mt-5">
-              <h5>📍 Address:</h5>
+              <h5>📍 Address</h5>
               <p>123 Tech Avenue, Innovation City, South Africa</p>
 
-              <h5>📞 Phone:</h5>
+              <h5>📞 Phone</h5>
               <p>+27 68 123 4567</p>
 
-              <h5>✉️ Email:</h5>
+              <h5>✉️ Email</h5>
               <p>support@gadgetsstore.com</p>
             </div>
 
