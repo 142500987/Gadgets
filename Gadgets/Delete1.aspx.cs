@@ -35,5 +35,10 @@ namespace Gadgets
             btncon.Visible = false;
             btncan.Visible = false;
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
