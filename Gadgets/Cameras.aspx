@@ -1,52 +1,119 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Cameras.aspx.cs" Inherits="Gadgets.Cameras" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" 
+    CodeBehind="Cameras.aspx.cs" Inherits="Gadgets.Cameras" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
+        body {
+            background-color: #0d0d0d;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
 
- body {
-      background-color: #0d0d0d;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-    }
-</style>
+        /* ----- CARD STYLE ----- */
+        .card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .card img {
+            border-radius: 12px;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid #00ccff;
+        }
+
+        .label-title {
+            font-weight: 600;
+            color: #00ccff;
+        }
+
+        .value {
+            color: #f2f2f2;
+        }
+
+        .info-row {
+            margin: 4px 0;
+        }
+    </style>
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        <br />
-        <asp:DataList ID="DataList1" runat="server" BorderColor="#0066FF" DataKeyField="Id" DataSourceID="SqlDataSource1" ForeColor="#0066FF" RepeatColumns="6" RepeatDirection="Horizontal">
-            <ItemTemplate>
-                <asp:ImageButton ID="ImageButton1" runat="server" BorderColor="Aqua" Height="350px" ImageUrl='<%# Eval("Image") %>' Width="300px" />
-                <br />
-                DeviceCode:
-                <asp:Label ID="DeviceCodeLabel" runat="server" Text='<%# Eval("DeviceCode") %>' />
-                <br />
-                DeviceName:
-                <asp:Label ID="DeviceNameLabel" runat="server" Text='<%# Eval("DeviceName") %>' />
-                <br />
-                DeviceType:
-                <asp:Label ID="DeviceTypeLabel" runat="server" Text='<%# Eval("DeviceType") %>' />
-                <br />
-                Price:
-                <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
-                <br />
-                IfHadPreviousOwner:
-                <asp:Label ID="IfHadPreviousOwnerLabel" runat="server" Text='<%# Eval("IfHadPreviousOwner") %>' />
-                <br />
-                Warranty:
-                <asp:Label ID="WarrantyLabel" runat="server" Text='<%# Eval("Warranty") %>' />
-                <br />
-                DeviceAge:
-                <asp:Label ID="DeviceAgeLabel" runat="server" Text='<%# Eval("DeviceAge") %>' />
-                <br />
-<br />
-            </ItemTemplate>
-        </asp:DataList>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [DeviceCode], [DeviceName], [DeviceType], [Price], [IfHadPreviousOwner], [Warranty], [DeviceAge], [Image] FROM [Gadget Table] WHERE ([DeviceType] = @DeviceType)">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="Label1" Name="DeviceType" PropertyName="Text" Type="String" />
-            </SelectParameters>
-        </asp:SqlDataSource>
-    </p>
-    <p>
-    </p>
+
+    <asp:Label ID="Label1" runat="server" Visible="false"></asp:Label>
+
+    <asp:DataList ID="DataList1" runat="server" 
+        DataKeyField="Id" 
+        DataSourceID="SqlDataSource1" 
+        RepeatColumns="4" 
+        RepeatDirection="Horizontal"
+        CellPadding="10">
+
+        <ItemTemplate>
+            <div class="card">
+                <asp:ImageButton ID="ImageButton1" runat="server" 
+                    ImageUrl='<%# Eval("Image") %>' />
+
+                <div class="info-row">
+                    <span class="label-title">Device Code: </span>
+                    <span class="value"><%# Eval("DeviceCode") %></span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label-title">Name: </span>
+                    <span class="value"><%# Eval("DeviceName") %></span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label-title">Type: </span>
+                    <span class="value"><%# Eval("DeviceType") %></span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label-title">Price: </span>
+                    <span class="value">$<%# Eval("Price") %></span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label-title">Used Before: </span>
+                    <span class="value"><%# Eval("IfHadPreviousOwner") %></span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label-title">Warranty: </span>
+                    <span class="value"><%# Eval("Warranty") %></span>
+                </div>
+
+                <div class="info-row">
+                    <span class="label-title">Age: </span>
+                    <span class="value"><%# Eval("DeviceAge") %> years</span>
+                </div>
+            </div>
+        </ItemTemplate>
+    </asp:DataList>
+
+    <asp:SqlDataSource 
+        ID="SqlDataSource1" 
+        runat="server" 
+        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+        SelectCommand="SELECT [Id], [DeviceCode], [DeviceName], [DeviceType], [Price], [IfHadPreviousOwner], [Warranty], [DeviceAge], [Image]
+                       FROM [Gadget Table]
+                       WHERE ([DeviceType] = @DeviceType)">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="Label1" Name="DeviceType" PropertyName="Text" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+
 </asp:Content>
+
