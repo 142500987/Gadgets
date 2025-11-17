@@ -15,8 +15,10 @@
         <br />
         <asp:DataList ID="DataList1" runat="server" BorderColor="Aqua" DataKeyField="Id" DataSourceID="SqlDataSource1" ForeColor="Aqua" RepeatColumns="6" RepeatDirection="Horizontal">
             <ItemTemplate>
+                <asp:Image ID="Image1" runat="server" />
+                <br />
                 Id:
-                <asp:Label ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
+                <asp:Label ID="IdLabel" runat="server" BorderColor="Aqua" Height="350px" ImageUrl='<%# Eval("Image") %>' Width="300px" />
                 <br />
                 DeviceCode:
                 <asp:Label ID="DeviceCodeLabel" runat="server" Text='<%# Eval("DeviceCode") %>' />

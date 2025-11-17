@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Laptops.aspx.cs" Inherits="Gadgets.Laptops" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Laptop.aspx.cs" Inherits="Gadgets.Laptops" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
              body {

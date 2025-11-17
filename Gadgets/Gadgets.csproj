@@ -167,7 +167,7 @@
     <Content Include="Images\Slideshow\Slide 3.png" />
     <Content Include="Index.aspx" />
     <Content Include="item.aspx" />
-    <Content Include="Laptops.aspx" />
+    <Content Include="Laptop.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Phones.aspx" />
     <Content Include="Update.aspx" />
@@ -284,12 +284,12 @@
     <Compile Include="item.aspx.designer.cs">
       <DependentUpon>item.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Laptops.aspx.cs">
-      <DependentUpon>Laptops.aspx</DependentUpon>
+    <Compile Include="Laptop.aspx.cs">
+      <DependentUpon>Laptop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Laptops.aspx.designer.cs">
-      <DependentUpon>Laptops.aspx</DependentUpon>
+    <Compile Include="Laptop.aspx.designer.cs">
+      <DependentUpon>Laptop.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
