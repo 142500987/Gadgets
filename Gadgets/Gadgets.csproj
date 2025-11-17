@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About Us.aspx" />
+    <Content Include="add new user.aspx" />
     <Content Include="AddCart.aspx" />
     <Content Include="App_Data\Gadget Database.mdf" />
     <Content Include="App_Data\Gadget Database_log.ldf">
@@ -186,6 +187,13 @@
     </Compile>
     <Compile Include="About Us.aspx.designer.cs">
       <DependentUpon>About Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add new user.aspx.cs">
+      <DependentUpon>add new user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add new user.aspx.designer.cs">
+      <DependentUpon>add new user.aspx</DependentUpon>
     </Compile>
     <Compile Include="AddCart.aspx.cs">
       <DependentUpon>AddCart.aspx</DependentUpon>
