@@ -219,10 +219,11 @@
       Login
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="loginDropdown">
-      <li><a class="dropdown-item" href="Login.aspx">Products delete</a></li>
-      <li><a class="dropdown-item" href="Login.aspx">Username delete</a></li>
-      <li><a class="dropdown-item" href="Login.aspx">Add Products</a></li>
-      <li><a class="dropdown-item" href="Login.aspx">Add User</a></li>
+      <li><a class="dropdown-item" href="Delete1.aspx">Products delete</a></li>
+      <li><a class="dropdown-item" href="Delete.aspx">Username delete</a></li>
+      <li><a class="dropdown-item" href="Update1.aspx">Update Products</a></li>
+      <li><a class="dropdown-item" href="Update.aspx">Update User</a></li>
+        <li><a class="dropdown-item" href="add new user.aspx">Add User</a></li>
     </ul>
   </li>
 </ul>
