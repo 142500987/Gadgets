@@ -71,7 +71,7 @@
   }
 
   .fw-bold {
-    color: #0a58ca;
+    color: #00FFFF;
     margin-bottom: 0.4rem;
   }
 
