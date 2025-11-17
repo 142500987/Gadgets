@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin masterpage.Master" AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="Gadgets.Delete" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="Gadgets.Delete" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
 *,::after,::before{box-sizing:border-box}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol,ul{padding-left:2rem}a{color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));text-decoration:underline}</style>
