@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <style>
   body {
-    background-color: #0a58ca;
+    background-color: #000000;
     color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -71,7 +71,7 @@
   }
 
   .fw-bold {
-    color: #0a58ca;
+    color: #00FFFF;
     margin-bottom: 0.4rem;
   }
 
@@ -81,7 +81,7 @@
 
   /* Buy Button */
   .btn-buy {
-    background: linear-gradient(90deg, #0a58ca, #084298);
+    background: linear-gradient(#00000);
     border: none;
     border-radius: 25px;
     font-weight: 500;
@@ -90,7 +90,7 @@
   }
 
   .btn-buy:hover {
-    background: #0a58ca;
+    background: #00FFFF;
     box-shadow: 0 0 12px rgba(10, 88, 202, 0.6);
     transform: scale(1.05);
   }

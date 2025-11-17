@@ -58,6 +58,51 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<<<<<<< HEAD
+    <p>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <br />
+        <asp:DataList ID="DataList1" runat="server" BorderColor="Aqua" DataKeyField="Id" DataSourceID="SqlDataSource1" ForeColor="Aqua" RepeatColumns="6" RepeatDirection="Horizontal">
+            <ItemTemplate>
+                Id:
+                <asp:Label ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
+                <br />
+                DeviceCode:
+                <asp:Label ID="DeviceCodeLabel" runat="server" Text='<%# Eval("DeviceCode") %>' />
+                <br />
+                DeviceName:
+                <asp:Label ID="DeviceNameLabel" runat="server" Text='<%# Eval("DeviceName") %>' />
+                <br />
+                DeviceType:
+                <asp:Label ID="DeviceTypeLabel" runat="server" Text='<%# Eval("DeviceType") %>' />
+                <br />
+                Price:
+                <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
+                <br />
+                IfHadPreviousOwner:
+                <asp:Label ID="IfHadPreviousOwnerLabel" runat="server" Text='<%# Eval("IfHadPreviousOwner") %>' />
+                <br />
+                Warranty:
+                <asp:Label ID="WarrantyLabel" runat="server" Text='<%# Eval("Warranty") %>' />
+                <br />
+                DeviceAge:
+                <asp:Label ID="DeviceAgeLabel" runat="server" Text='<%# Eval("DeviceAge") %>' />
+                <br />
+                Image:
+                <asp:Label ID="ImageLabel" runat="server" Text='<%# Eval("Image") %>' />
+<br />
+                <br />
+            </ItemTemplate>
+        </asp:DataList>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [DeviceCode], [DeviceName], [DeviceType], [Price], [IfHadPreviousOwner], [Warranty], [DeviceAge], [Image] FROM [Gadget Table] WHERE ([DeviceType] = @DeviceType)">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="Label1" Name="DeviceType" PropertyName="Text" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+    </p>
+    <p>
+    </p>
+=======
 
     <!-- Hidden label used for SQL filtering -->
     <asp:Label ID="Label1" runat="server" Visible="false"></asp:Label>
@@ -142,5 +187,6 @@
 
     </asp:SqlDataSource>
 
+>>>>>>> 7197021e48657dd618fa22de8fa7979394dc57a3
 </asp:Content>
 
