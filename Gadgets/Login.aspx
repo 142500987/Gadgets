@@ -4,34 +4,34 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table style="width:100%;">
         <tr>
-            <td class="auto-style1">
-                <asp:Label ID="ldlUsrename" runat="server" BackColor="#0033CC" BorderColor="White" BorderStyle="Groove" Font-Bold="True" Font-Names="Berlin Sans FB Demi" ForeColor="White" Text="Username"></asp:Label>
+            <td class="auto-style1" style="height: 26px">
+                <asp:Label ID="ldlUsrename" runat="server" BackColor="Black" BorderColor="Aqua" BorderStyle="Groove" Font-Bold="True" Font-Names="Berlin Sans FB Demi" ForeColor="Aqua" Text="Username"></asp:Label>
             </td>
-            <td>
-                <asp:TextBox ID="TxtUsername" runat="server" OnTextChanged="TxtUsername_TextChanged"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style1">
-                <asp:Label ID="ldlPassword" runat="server" BackColor="#0066CC" BorderColor="White" BorderStyle="Double" Font-Bold="True" Font-Names="Berlin Sans FB Demi" ForeColor="White" Text="PassWord"></asp:Label>
-            </td>
-            <td>
-                <asp:TextBox ID="TxtPassword" runat="server"></asp:TextBox>
+            <td style="height: 26px">
+                <asp:TextBox ID="TxtUsername" runat="server" OnTextChanged="TxtUsername_TextChanged" BackColor="Black" BorderColor="Aqua" ForeColor="Aqua"></asp:TextBox>
             </td>
         </tr>
         <tr>
             <td class="auto-style1">
-                <asp:Button ID="btnLogin" runat="server" Font-Bold="True" Font-Names="Arial Black" Text="Login" OnClick="btnLogin_Click" />
+                <asp:Label ID="ldlPassword" runat="server" BackColor="Black" BorderColor="Aqua" BorderStyle="Double" Font-Bold="True" Font-Names="Berlin Sans FB Demi" ForeColor="Aqua" Text="PassWord"></asp:Label>
             </td>
             <td>
-                <asp:Button ID="btnretry" runat="server" Text="retry" />
+                <asp:TextBox ID="TxtPassword" runat="server" BackColor="Black" BorderColor="Aqua" ForeColor="Aqua"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                <asp:Button ID="btnLogin" runat="server" Font-Bold="True" Font-Names="Arial Black" Text="Login" OnClick="btnLogin_Click" BackColor="Black" BorderColor="Aqua" ForeColor="Aqua" />
+            </td>
+            <td>
+                <asp:Button ID="btnretry" runat="server" Text="retry" BackColor="Black" BorderColor="Aqua" ForeColor="Aqua" />
             </td>
         </tr>
     </table>
     <table style="width:100%;">
         <tr>
             <td>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource2" GridLines="Vertical">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="Black" BorderColor="Aqua" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="Id" DataSourceID="SqlDataSource2" GridLines="Vertical" ForeColor="Aqua">
                     <AlternatingRowStyle BackColor="#DCDCDC" />
                     <Columns>
                         <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
