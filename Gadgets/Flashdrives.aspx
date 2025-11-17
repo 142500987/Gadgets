@@ -5,7 +5,7 @@
     <style>
 
         body {
-            background-color: #0a58ca;
+            background-color: #000;
             color: #f5f5f5;
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;
@@ -64,7 +64,7 @@
         runat="server"
         DataKeyField="Id" 
         DataSourceID="SqlDataSource1"
-        RepeatColumns="5"
+        RepeatColumns="4"
         RepeatDirection="Horizontal"
         CellPadding="10">
 
@@ -95,8 +95,7 @@
 
                 <div class="info-row">
                     <span class="label-title">Price: </span>
-                    <span class="value">$<%# Eval("Price") %></span>
-                </div>
+                    <span class="value">$<%# Eval("Price") %></span></div>
 
                 <div class="info-row">
                     <span class="label-title">Used Before: </span>

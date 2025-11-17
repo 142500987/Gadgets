@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         body {
-            background-color: #0d0d0d;
+            background-color: #000;
             color: #fff;
             font-family: 'Poppins', sans-serif;
         }

@@ -5,7 +5,7 @@
     <style>
 
         body {
-            background-color: #0a58ca;
+            background-color: #000;
             color: #f5f5f5;
             font-family: 'Poppins', sans-serif;
         }
@@ -13,7 +13,7 @@
         /* Card styles */
         .console-card {
             width: 260px;
-            background: #061e4a;
+            background: #111;
             border-radius: 14px;
             padding: 15px;
             margin: 18px;
@@ -67,9 +67,11 @@
         runat="server"
         DataKeyField="Id" 
         DataSourceID="SqlDataSource1"
-        RepeatColumns="5"
+        RepeatColumns="4"
         RepeatDirection="Horizontal"
-        CellPadding="10">
+        CellPadding="10" BackColor="Black" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="Aqua">
+
+        <HeaderStyle BackColor="Black" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="Aqua" Wrap="False" />
 
         <ItemTemplate>
 
@@ -98,8 +100,7 @@
 
                 <div class="info-row">
                     <span class="label-title">Price: </span>
-                    <span class="value">$<%# Eval("Price") %></span>
-                </div>
+                    <span class="value">$<%# Eval("Price") %></span></div>
 
                 <div class="info-row">
                     <span class="label-title">Used Before: </span>
