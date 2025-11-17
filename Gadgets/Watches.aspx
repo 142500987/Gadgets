@@ -71,7 +71,7 @@
         runat="server"
         DataKeyField="Id"
         DataSourceID="SqlDataSource1"
-        RepeatColumns="5"
+        RepeatColumns="3"
         RepeatDirection="Horizontal"
         CellPadding="10">
 
@@ -120,9 +120,9 @@
                 </div>
 
                 <button type="button"
-                        class="btn btn-primary"
+                        class="btn btn-info"
                         onclick="addToCart('<%# Eval("DeviceName") %>', '<%# Eval("Price") %>')">
-                    Add to Cart
+                   <strong>Add to Cart</strong>
                 </button>
 
                 <br /><br />
