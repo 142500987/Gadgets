@@ -43,7 +43,7 @@
         <asp:Label ID="Label3" runat="server" BackColor="Black" BorderColor="Aqua" ForeColor="Aqua" Text="record has been deleted" Visible="False"></asp:Label>
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="Black" BorderColor="Aqua" DataKeyNames="Id" DataSourceID="SqlDataSource1" ForeColor="Aqua">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="Black" BorderColor="Aqua" DataKeyNames="Id" DataSourceID="SqlDataSource1" ForeColor="Aqua" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
                 <asp:BoundField DataField="DeviceCode" HeaderText="DeviceCode" SortExpression="DeviceCode" />

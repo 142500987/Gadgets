@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<<<<<<< HEAD
+
     <style>
 
         body {
@@ -58,8 +58,7 @@
 
     </style>
 
-=======
->>>>>>> 66a836d72da5f892cd8989fcde4adb240e96f3fd
+
 </asp:Content>
 
 
