@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About Us.aspx" />
+    <Content Include="AddCart.aspx" />
     <Content Include="App_Data\Gadget Database.mdf" />
     <Content Include="App_Data\Gadget Database_log.ldf">
       <DependentUpon>Gadget Database.mdf</DependentUpon>
@@ -167,7 +168,7 @@
     <Content Include="Images\Slideshow\Slide 3.png" />
     <Content Include="Index.aspx" />
     <Content Include="item.aspx" />
-    <Content Include="Laptop.aspx" />
+    <Content Include="Laptops.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Phones.aspx" />
     <Content Include="Update.aspx" />
@@ -185,6 +186,13 @@
     </Compile>
     <Compile Include="About Us.aspx.designer.cs">
       <DependentUpon>About Us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCart.aspx.cs">
+      <DependentUpon>AddCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCart.aspx.designer.cs">
+      <DependentUpon>AddCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin masterpage.Master.cs">
       <DependentUpon>Admin masterpage.Master</DependentUpon>
@@ -284,12 +292,12 @@
     <Compile Include="item.aspx.designer.cs">
       <DependentUpon>item.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Laptop.aspx.cs">
-      <DependentUpon>Laptop.aspx</DependentUpon>
+    <Compile Include="Laptops.aspx.cs">
+      <DependentUpon>Laptops.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Laptop.aspx.designer.cs">
-      <DependentUpon>Laptop.aspx</DependentUpon>
+    <Compile Include="Laptops.aspx.designer.cs">
+      <DependentUpon>Laptops.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
